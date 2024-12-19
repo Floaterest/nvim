@@ -22,7 +22,6 @@ local haskell = {
 local servers = {
     pyright = {},
     svelte = {},
-    -- typst_lsp = {},
     clangd = {},
     agda_ls = {},
     hls = { haskell = haskell },

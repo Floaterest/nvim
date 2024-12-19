@@ -23,16 +23,7 @@ end
 
 local noice = require('lazy').setup({
     -- { 'floaterest/typst-preview.nvim', ft = 'typst', opts = config.typst },
-{
-  'chomosuke/typst-preview.nvim',
-  ft = 'typst',
-dependencies_bin = {
-    ['tinymist'] = nil,
-    ['websocat'] = nil
-  },
-  version = '1.*',
-  opts = {}, 
-},
+    { 'chomosuke/typst-preview.nvim', ft = 'typst', opts = config.typst },
     { 'L3MON4D3/LuaSnip', config = req('plugins.luasnip') },
     { 'Shatur/neovim-session-manager', config = config.session },
     { 'akinsho/bufferline.nvim', opts = config.bufferline },
