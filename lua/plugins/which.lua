@@ -12,7 +12,7 @@ local function bd()
 end
 
 local default = {
-    -- { '<c-c>', copy, desc = 'Copy buffer' },
+    { '<c-c>', copy, desc = 'Copy buffer' },
     { '<c-h>', vim.cmd.noh, desc = 'Stop the highlighting' },
     {
         '<c-p>',
@@ -39,6 +39,8 @@ local default = {
     { '<leader>p', '"+p', desc = 'System paste', mode = { 'n', 'x' } },
     { '<leader>q', vim.cmd.q, desc = 'Quit' },
     { '<leader>Q', vim.cmd.qa, desc = 'Quit all' },
+    { '<leader>x', vim.cmd.x, desc = 'Write quit'},
+    { '<leader>X', vim.cmd.xa, desc = 'Write quit all'},
     { '<leader>y', '"+y', desc = 'System yank', mode = 'x' },
 
     { '<leader>t', group = 'tab' },
@@ -118,6 +120,8 @@ end
 local status, builtin = pcall(require, 'telescope.builtin')
 if status then
     which.add({
+        { '<leader>b', builtin.buffers, desc = 'Buffers' },
+
         { '<leader>f', builtin.find_files, desc = 'Find file' },
         { '<leader>F', group = 'telescope' },
         { '<leader>Ff', builtin.find_files, desc = 'Find file' },
@@ -152,7 +156,7 @@ end
 local status, buffer = pcall(require, 'bufferline')
 if status then
     which.add({
-        { '<leader>b', buffer.pick, desc = 'Select buffer' },
+        -- { '<leader>b', buffer.pick, desc = 'Select buffer' },
         { '<leader>B', group = 'Buffer' },
         { '<leader>Bb', buffer.pick, desc = 'Select buffer' },
         {
