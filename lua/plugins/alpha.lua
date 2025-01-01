@@ -32,8 +32,8 @@ require('alpha').setup({
             val = {
                 button('f', '󰈔  Find file', '<cmd>Telescope find_files<cr>'),
                 button('g', '  Live grep', '<cmd>Telescope live_grep<cr>'),
-                -- button('t', '  NvimTree', '<cmd>NvimTreeToggle<cr>'),
                 button('t', '  Terminal', '<cmd>term<cr>'),
+                button('T', '  NvimTree', '<cmd>NvimTreeToggle<cr>'),
                 -- button("s", "󱈄  Select sessions", "<cmd>SessionManager load_session<cr>"),
                 button(
                     'o',
