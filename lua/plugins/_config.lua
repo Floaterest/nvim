@@ -7,7 +7,8 @@ return {
         buttons = false,
     },
     typst = {
-        port = 8080,
+        port = 8000,
+        debug = true,
         get_root = function(_)
             return vim.fn.getcwd()
         end,
