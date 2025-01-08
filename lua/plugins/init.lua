@@ -22,9 +22,9 @@ local function req(path)
 end
 
 require('lazy').setup({
-    -- { 'floaterest/typst-preview.nvim', ft = 'typst', opts = config.typst },
+    { 'floaterest/typst-preview.nvim', ft = 'typst', opts = config.typst },
     -- { 'chomosuke/typst-preview.nvim', ft = 'typst', opts = config.typst },
-    { dir = '/home/u/Templates/typst-preview.nvim', ft = 'typst', opts = config.typst },
+    -- { dir = '/home/u/Templates/typst-preview.nvim', ft = 'typst', opts = config.typst },
     { "tiagovla/scope.nvim", opts = {} },
     { "willothy/flatten.nvim", config = true, cond = not vim.g.neovide, lazy = false, priority = 1001},
     { 'L3MON4D3/LuaSnip', config = req('plugins.luasnip') },
