@@ -24,6 +24,7 @@ local servers = {
     svelte = {},
     clangd = {},
     agda_ls = {},
+    tinymist = {},
     hls = { haskell = haskell },
     rust_analyzer = { settings = rust },
 }
